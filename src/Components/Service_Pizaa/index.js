@@ -1,5 +1,4 @@
 import React,{Component} from 'react'
-import {Link} from 'react-router-dom'
 import axios from 'axios'
 class Service_Pizaa extends Component {
     state = {
@@ -39,7 +38,6 @@ class Service_Pizaa extends Component {
                                 <th>عائلي</th>
                             </tr>
                             </thead>
-
                             {menuList}
                         </table>
                         </div>
