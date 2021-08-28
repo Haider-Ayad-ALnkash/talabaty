@@ -6,7 +6,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'helvetica',
     monospace;
 }
 .menu{
@@ -15,4 +15,7 @@ code {
 }
 .bg-dark {
   background-color:#212529b8!important;
+}
+.list-group{
+  direction: ltr;
 }

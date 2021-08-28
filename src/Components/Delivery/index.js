@@ -2,7 +2,7 @@ import React from 'react'
 import imaDelivery from '../Delivery/Delivery.svg'
 const Delivery=()=> {
     return (
-        <section className="delevery py-5 text-center">
+        <section className="delevery text-center">
             <div className="container">
                 <div className="row">
                     <div className="col-sm-6  display-6">
