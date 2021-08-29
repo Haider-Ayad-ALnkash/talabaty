@@ -5,7 +5,7 @@ class Service_Mnukesh extends Component {
         menu:[]
     }
     componentDidMount(){
-        axios.get('data.json').then(res=>{this.setState({menu:res.data.mnakesh})})
+        axios.get('js/data.json').then(res=>{this.setState({menu:res.data.mnakesh})})
     }
     render() {
         const {menu}=this.state;

@@ -5,7 +5,7 @@ class Service_lzania extends Component {
         menu:[]
     }
     componentDidMount(){
-        axios.get('data.json').then(res=>{this.setState({menu:res.data.lzania})})
+        axios.get('js/data.json').then(res=>{this.setState({menu:res.data.lzania})})
     }
     render() {
         const {menu}=this.state;

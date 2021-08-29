@@ -6,7 +6,7 @@ class Service extends Component {
         services:[]
     }
     componentDidMount(){
-        axios.get('data.json').then(res=>{this.setState({services:res.data.service})})
+        axios.get('js/data.json').then(res=>{this.setState({services:res.data.service})})
     }
     render() {
         const {services}=this.state;

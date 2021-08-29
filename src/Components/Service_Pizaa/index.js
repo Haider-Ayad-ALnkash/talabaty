@@ -5,7 +5,7 @@ class Service_Pizaa extends Component {
         menu:[]
     }
     componentDidMount(){
-        axios.get('data.json').then(res=>{this.setState({menu:res.data.pizaa})})
+        axios.get('js/data.json').then(res=>{this.setState({menu:res.data.pizaa})})
     }
     render() {
         const {menu}=this.state;
