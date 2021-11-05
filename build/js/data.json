@@ -3,19 +3,19 @@
         {
             "id" : 1,
             "body": "اختار نوع البيتزا الي تحبها ",
-            "image": "Images/pizaa.jpg",
+            "image": "../Images/pizaa.jpg",
             "link":"/pizaa"
         },
         {
             "id" : 2,
             "body": "اختار نوع مناقيش الي تحبها ",            
-             "image": "Images/munakesh.jpg",
+             "image": "../Images/munakesh.jpg",
              "link":"/mnakesh"
         },
         {
             "id" : 3,
             "body": "اختار نوع لزانيا الي تحبها "
-            , "image": "Images/lizania.jpg",
+            , "image": "../Images/lizania.jpg",
             "link":"/lzania"
         } 
     ],
