@@ -41,32 +41,3 @@ export default function Service_Pizaa() {
         </div>
     )
 }
-
-// class Service_Pizaa extends Component {
-//     state = {
-//         menu:[]
-//     }
-//     componentDidMount(){
-//         axios.get('js/data.json').then(res=>{this.setState({menu:res.data.pizaa})})
-//     }
-//     render() {
-//         const {menu}=this.state;
-//         const menuList=menu.map(menu=>{
-//             return (
-//                         <tbody key={menu.id}>
-//                             <tr>
-//                                 <td>{menu.name}</td>
-//                                 <td>{menu.small}</td>
-//                                 <td>{menu.midum}</td>
-//                                 <td>{menu.larg}</td>
-//                             </tr>
-//                         </tbody> 
-//             )
-//         })
-//             return(
-               
-//             )
-//     }
-    
-// }
-// export default Service_Pizaa;
