@@ -1,35 +1,30 @@
-import React,{Component} from 'react'
+import React,{useState,useEffect} from 'react'
 import axios from 'axios'
-class Service_Pizaa extends Component {
-    state = {
-        menu:[]
-    }
-    componentDidMount(){
-        axios.get('js/data.json').then(res=>{this.setState({menu:res.data.pizaa})})
-    }
-    render() {
-        const {menu}=this.state;
-        const menuList=menu.map(menu=>{
-            return (
-                
-                        <tbody key={menu.id}>
-                            <tr>
-                                <td>{menu.name}</td>
-                                <td>{menu.small}</td>
-                                <td>{menu.midum}</td>
-                                <td>{menu.larg}</td>
-                            </tr>
-                        </tbody>
-               
-            )
-        })
-            return(
-                <section className="menu">
+export default function Service_Pizaa() {
+    const [menus,setMenus]=useState([])
+    useEffect(()=>{
+        axios.get('js/data.json').then(res=>{setMenus(res.data.pizaa) })
+    },[])
+    const menuList=menus.map((menu)=>{
+    return (
+                <tbody key={menu.id}>
+                    <tr>
+                        <td>{menu.name}</td>
+                        <td>{menu.small}</td>
+                        <td>{menu.midum}</td>
+                        <td>{menu.larg}</td>
+                    </tr>
+                </tbody> 
+                    )}
+    )
+    return (
+        <div>
+              <section className="menu">
                     <div className="container">
                         <div className="row text-center">
-                        <h2>شوف الاسعار  حار ومكسب ورخيص</h2> 
+                        <h2> شوف الاسعار حار ومكسب ورخيص </h2> 
                         <h2 className="badge bg-danger">بيتزا</h2> 
-                        <table class="table table-striped">
+                        <table className="table table-striped">
                             <thead>
                             <tr>
                                 <th>اسم الوجبة</th>
@@ -43,8 +38,35 @@ class Service_Pizaa extends Component {
                         </div>
                     </div>
                 </section>
-            )
-    }
-    
+        </div>
+    )
 }
-export default Service_Pizaa;
+
+// class Service_Pizaa extends Component {
+//     state = {
+//         menu:[]
+//     }
+//     componentDidMount(){
+//         axios.get('js/data.json').then(res=>{this.setState({menu:res.data.pizaa})})
+//     }
+//     render() {
+//         const {menu}=this.state;
+//         const menuList=menu.map(menu=>{
+//             return (
+//                         <tbody key={menu.id}>
+//                             <tr>
+//                                 <td>{menu.name}</td>
+//                                 <td>{menu.small}</td>
+//                                 <td>{menu.midum}</td>
+//                                 <td>{menu.larg}</td>
+//                             </tr>
+//                         </tbody> 
+//             )
+//         })
+//             return(
+               
+//             )
+//     }
+    
+// }
+// export default Service_Pizaa;
