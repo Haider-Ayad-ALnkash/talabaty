@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
-
+import humbrger from '../Images/humbrger.jpg'
 class Service extends Component {
     state = {
         services:[]
@@ -35,7 +35,7 @@ class Service extends Component {
 
                             </div>
                             <div className="col-sm-6 col-md-4 card">
-                                <img src="../Images/humbrger.jpg" className="card-img-top" alt="..."/>
+                                <img src={humbrger} className="card-img-top" alt="..."/>
                                 <div className="card-body">
                                     <h5 className="card-title">سندويش</h5>
                                     <h4 className="card-text">طعم الهمبركر عدنا عالم ثاني  مذاق شي خيالي شنو منتظر أطلب هسة </h4>
@@ -50,7 +50,7 @@ class Service extends Component {
                                 </ul>
                             </div>
                             <div className="col-sm-6 col-md-4 card">
-                                <img src="../Images/sach.jpg" className="card-img-top" alt="..."/>
+                                <img src="/Images/sach.jpg" className="card-img-top" alt="..."/>
                                 <div className="card-body">
                                     <h2 className="card-title">صاج</h2>
                                     <h4 className="card-text">طعم الصاج عدنا يوديك ياخذك سفرة باجواء لبنان شنو منتظر <span>أطلب هسة</span> </h4>
