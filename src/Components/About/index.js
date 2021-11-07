@@ -1,5 +1,7 @@
 import React from 'react'
-import cursol from '../Images/01.jpg';
+import cursol1 from '../Images/01.jpg';
+import cursol2 from '../Images/02.png';
+import cursol3 from '../Images/03.png';
  const About=()=> {
     return (
         <div>
@@ -11,21 +13,21 @@ import cursol from '../Images/01.jpg';
                     </div>
                     <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src={cursol} className="d-block w-100" alt="..."/>
+                        <img src={cursol1} className="d-block w-100" alt="..."/>
                         <div className="carousel-caption d-none d-md-block">
                         <h3>هبركر لحم عراقي</h3>
                         <p>جربها هسة وعيش متعة المذاق </p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                         <img src={cursol} className="d-block w-100" alt="..."/>
+                         <img src={cursol2} className="d-block w-100" alt="..."/>
                         <div className="carousel-caption d-none d-md-block">
                         <h5>Second slide label</h5>
                         <p>Some representative placeholder content for the second slide.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={cursol} className="d-block w-100" alt="..."/>
+                        <img src={cursol3} className="d-block w-100" alt="..."/>
                         <div className="carousel-caption d-none d-md-block">
                         <h5>Third slide label</h5>
                         <p>Some representative placeholder content for the third slide.</p>
